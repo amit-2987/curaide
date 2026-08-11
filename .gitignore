@@ -1,0 +1,7 @@
+# PII / sensitive submitted lead data - do not commit
+forms/submitted-data.json
+forms/before-submitted-data.json
+
+# OS / editor files
+.DS_Store
+Thumbs.db

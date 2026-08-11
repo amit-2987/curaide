@@ -1,0 +1,6 @@
+[05-Jun-2023 08:07:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatetruecolor() in /home2/gacadmin/public_html/forms/captcha/securimage.php:479
+Stack trace:
+#0 /home2/gacadmin/public_html/forms/captcha/securimage.php(446): Securimage->doImage()
+#1 /home2/gacadmin/public_html/forms/captcha/securimage_show.php(7): Securimage->show()
+#2 {main}
+  thrown in /home2/gacadmin/public_html/forms/captcha/securimage.php on line 479

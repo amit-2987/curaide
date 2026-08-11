@@ -1,0 +1,13 @@
+[30/7/2026, 8:51:10 pm] layer "icon-economic-arbitration.png": Duplicate path: icon-economic-arbitration.png
+[30/7/2026, 8:51:10 pm] layer "icon-economic-arbitration.png": Duplicate path: icon-economic-arbitration.png
+[30/7/2026, 8:51:10 pm] layer "icon-diagnosaide.png": Duplicate path: icon-diagnosaide.png
+[30/7/2026, 8:51:10 pm] layer "icon-curaidepods.png": Duplicate path: icon-curaidepods.png
+[30/7/2026, 8:51:10 pm] layer "icon-diagnosaide.png": Duplicate path: icon-diagnosaide.png
+[30/7/2026, 8:50:13 pm] layer "10%+": Expected end of input but "+" found.
+[30/7/2026, 8:50:13 pm] layer "1,000+": Expected end of input but "+" found.
+[30/7/2026, 8:51:10 pm] layer "10%+": Expected end of input but "+" found.
+[30/7/2026, 8:51:10 pm] layer "1,000+": Expected end of input but "+" found.
+[30/7/2026, 8:51:10 pm] layer "30%+": Expected end of input but "+" found.
+[30/7/2026, 8:50:13 pm] layer "Connects financial diagnosis directly to operational treatment,": Expected end of input but "," found.
+[30/7/2026, 8:51:10 pm] layer "Reduce low-value clinical admin burden and enable intentional, ": Expected end of input but "," found.
+[30/7/2026, 8:51:10 pm] layer "Denial rates down 30%+": Expected end of input but "+" found.
