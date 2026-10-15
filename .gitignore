@@ -1,6 +1,16 @@
 # PII / sensitive submitted lead data - do not commit
 forms/submitted-data.json
 forms/before-submitted-data.json
+.htaccess
+robots.txt
+htaccess.txt
+*.bak
+*.exe
+*.log
+*.zip
+*.rar
+/nitropack-sdk
+/attachments
 
 # OS / editor files
 .DS_Store
