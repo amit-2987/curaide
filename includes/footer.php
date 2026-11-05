@@ -86,6 +86,18 @@
                   </div>
                 </div>
 
+                <!-- SMS Consent -->
+                <div class="curaide-sms-consent mt-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="sms-opt-in" id="smsOptIn" value="true" checked>
+                    <label class="form-check-label" for="smsOptIn">I consent to receive SMS from curaide.ai</label>
+                  </div>
+                  <p class="curaide-sms-consent__disclaimer mt-2 mb-0">
+                    <span class="d-block fw-semibold">A disclaimer</span>
+                    By submitting contact information on this website, you consent to receive calls, SMS, and emails from curaide.ai. You certify that you are the owner of the contact information provided.
+                  </p>
+                </div>
+
                 <div class="text-center mt-4">
                   <button type="submit" class="curaide-btn curaide-btn--primary px-4 py-2">Submit Request</button>
                 </div>

@@ -108,8 +108,8 @@
     });
 </script>
 
-<?php if (basename($_SERVER['PHP_SELF']) == 'index.php') { ?>
-<script>
+<?php //if (basename($_SERVER['PHP_SELF']) == 'index.php') { ?>
+<!-- <script>
         // Optional: remove this function if you don't need dynamic variables
         function getElevenLabsDynamicVars(mode) {
             var utmData = {};
@@ -154,5 +154,191 @@
             },
         };
     </script>
-<script src="https://clicktalk-elevenlabs-918868566464.us-central1.run.app/static/elevenlabs-agent.js" defer></script>
-<?php } ?>
+<script src="https://clicktalk-elevenlabs-918868566464.us-central1.run.app/static/elevenlabs-agent.js" defer></script> -->
+<?php //} ?>
+<?php //if (basename($_SERVER['PHP_SELF']) === 'telenok-chat-test.php'): ?>
+    <script>
+    const params = new URLSearchParams(window.location.search);
+
+    function getGaClientId() {
+        var __ga = getCookie('_ga');
+
+        if (!__ga) return null;
+
+        var __ga_splitted = __ga.split('.');
+
+        if (__ga_splitted[2] && __ga_splitted[3]) {
+            return __ga_splitted.slice(2).join('.');
+        }
+
+        return null;
+    }
+
+    function cleanValue(value) {
+        return (value && value !== '-') ? value : null;
+    }
+
+    /*
+     * Get Analytics consent from CookieYes
+     *
+     * true  = Analytics consent accepted
+     * false = Analytics consent not accepted
+     */
+    function getAnalyticsConsent() {
+        try {
+            if (typeof window.getCkyConsent === 'function') {
+                var consent = window.getCkyConsent();
+
+                if (
+                    consent &&
+                    consent.categories &&
+                    typeof consent.categories.analytics !== 'undefined'
+                ) {
+                    return !!consent.categories.analytics;
+                }
+            }
+        } catch (error) {
+            console.error(
+                '[TelenokContext] CookieYes consent error:',
+                error
+            );
+        }
+
+        return false;
+    }
+
+    function buildTelenokContext(utmData) {
+        utmData = utmData || {};
+
+        return {
+            user_id: cleanValue(utmData.userId),
+
+            clientid: getGaClientId(),
+
+            utm_source:
+                params.get("utm_source") ||
+                cleanValue(utmData.utm_source),
+
+            utm_medium:
+                params.get("utm_medium") ||
+                cleanValue(utmData.utm_medium),
+
+            utm_campaign:
+                params.get("utm_campaign") ||
+                cleanValue(utmData.utm_campaign),
+
+            utm_term:
+                params.get("utm_term") ||
+                cleanValue(utmData.utm_term),
+
+            utm_content:
+                params.get("utm_content") ||
+                cleanValue(utmData.utm_content),
+
+            utm_adgroup:
+                params.get("utm_adgroup") ||
+                cleanValue(utmData.utm_adgroup),
+
+            gclid:
+                params.get("gclid") ||
+                cleanValue(utmData.gclid),
+
+            country:
+                cleanValue(utmData.country),
+
+            ip_address:
+                cleanValue(utmData.ip_address),
+
+            ip_country_name:
+                cleanValue(utmData.ip_country_name),
+
+            /*
+             * CookieYes Analytics consent
+             */
+            analytics_consent: getAnalyticsConsent()
+        };
+    }
+
+    /*
+     * Create initial Telenok context
+     */
+    function updateTelenokContext(utmData) {
+        window.TelenokContext = buildTelenokContext(utmData);
+
+        console.log(
+            '[TelenokContext] Updated:',
+            window.TelenokContext
+        );
+    }
+
+    /*
+     * Initial context
+     */
+    updateTelenokContext(
+        typeof userUtmData !== 'undefined'
+            ? userUtmData
+            : {}
+    );
+
+    /*
+     * Resolve country/IP data
+     */
+    if (typeof countryCodePromise !== 'undefined') {
+
+        countryCodePromise
+            .then(function(resolvedUtmData) {
+
+                updateTelenokContext(resolvedUtmData);
+
+            })
+            .catch(function(error) {
+
+                console.error(
+                    '[TelenokContext] Error resolving country data:',
+                    error
+                );
+
+            });
+    }
+
+    /*
+     * CookieYes consent changes
+     *
+     * This updates analytics_consent when the
+     * user accepts/rejects cookies.
+     */
+    document.addEventListener(
+        'cookieyes_consent_update',
+        function(event) {
+
+            console.log(
+                '[CookieYes] Consent updated:',
+                event.detail
+            );
+
+            /*
+             * Rebuild context after consent changes
+             */
+            updateTelenokContext(
+                typeof userUtmData !== 'undefined'
+                    ? userUtmData
+                    : {}
+            );
+
+            console.log(
+                '[TelenokContext] Analytics consent:',
+                window.TelenokContext.analytics_consent
+            );
+        }
+    );
+
+    /*
+     * Debug
+     */
+    console.log(
+        '[TelenokContext] Initial:',
+        window.TelenokContext
+    );
+</script>
+<script src="https://neo.telenokai.com/widget/loader.js?v=a0ebe15f" data-key="60af184b-1d2c-4b2f-bf99-f5d4115d0a01" data-server-url="https://api-neo.telenokai.com"></script>
+<?php //endif; ?>

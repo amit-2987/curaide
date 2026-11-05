@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico"/>
     <title>Curaide | Healthcare Revenue Cycle Control Plane</title>
-    <meta name="description" content="Curaide combines PRAXIS, operational PODs, and Compass within a healthcare RCM control plane to diagnose workflow gaps, coordinate execution, and measure operational outcomes.">
+    <meta name="description" content="Curaide combines PRAXIS, operational PODs, and Compass within a healthcare RCM control plane to diagnose workflow gaps, coordinate execution, and measure operational outcomes."/>
     <link rel="canonical" href="https://www.curaide.ai/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Curaide" />
@@ -1592,21 +1592,21 @@
     <?php include_once $_SERVER['DOCUMENT_ROOT'] . "/includes/footer.php"; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <script>
-        (function () {
+        (function() {
             var wrapper = document.querySelector('.curaide-hero-cards-wrapper');
             if (!wrapper) return;
             var cards = wrapper.querySelectorAll('.curaide-hero-card');
             var defaultCard = wrapper.querySelector('[data-default-active="true"]');
-            cards.forEach(function (card) {
-                card.addEventListener('mouseenter', function () {
-                    cards.forEach(function (c) {
+            cards.forEach(function(card) {
+                card.addEventListener('mouseenter', function() {
+                    cards.forEach(function(c) {
                         c.classList.remove('curaide-hero-card--active');
                     });
                     card.classList.add('curaide-hero-card--active');
                 });
             });
-            wrapper.addEventListener('mouseleave', function () {
-                cards.forEach(function (c) {
+            wrapper.addEventListener('mouseleave', function() {
+                cards.forEach(function(c) {
                     c.classList.remove('curaide-hero-card--active');
                 });
                 if (defaultCard) {
@@ -1616,169 +1616,166 @@
         })();
     </script>
     <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://Curaide.ai/#organization",
-      "name": "Flatworld Solutions Inc.",
-      "url": "https://www.flatworldsolutions.com/",
-      "brand": {
-        "@type": "Brand",
-        "name": "Curaide"
-      }
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://Curaide.ai/#website",
-      "url": "https://Curaide.ai/",
-      "name": "Curaide",
-      "description": "Curaide is a healthcare revenue cycle management decision control plane that governs operational decisions across existing healthcare systems, AI agents, and human teams.",
-      "publisher": {
-        "@id": "https://Curaide.ai/#organization"
-      },
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://Curaide.ai/#webpage",
-      "url": "https://Curaide.ai/",
-      "name": "Curaide - Decision Control Plane for Healthcare Operations",
-      "description": "Curaide combines DiagnosAIDE, modular Curaide PODs, and Compass to diagnose revenue cycle gaps, coordinate operational treatment, and measure improvement across existing healthcare systems.",
-      "isPartOf": {
-        "@id": "https://Curaide.ai/#website"
-      },
-      "about": {
-        "@id": "https://Curaide.ai/#software"
-      },
-      "publisher": {
-        "@id": "https://Curaide.ai/#organization"
-      },
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "@id": "https://Curaide.ai/#software",
-      "name": "Curaide",
-      "alternateName": "Curaide Healthcare RCM Decision Control Plane",
-      "url": "https://Curaide.ai/",
-      "mainEntityOfPage": {
-        "@id": "https://Curaide.ai/#webpage"
-      },
-      "applicationCategory": "BusinessApplication",
-      "applicationSubCategory": "Healthcare Revenue Cycle Management",
-      "operatingSystem": "Web-based",
-      "description": "Curaide is a software-based decision control plane for healthcare revenue cycle operations. It operates above existing EHR, billing, RCM, AI, and workflow systems to determine what should happen next, what should be prioritized, and whether an action should be executed by an AI agent or reviewed by a human.",
-      "provider": {
-        "@id": "https://Curaide.ai/#organization"
-      },
-      "brand": {
-        "@type": "Brand",
-        "name": "Curaide"
-      },
-      "audience": {
-        "@type": "BusinessAudience",
-        "audienceType": "Healthcare organizations, hospitals, health systems, physician groups, specialty practices, revenue cycle leaders, healthcare CFOs, and private-equity-backed provider groups"
-      },
-      "featureList": [
-        "DiagnosAIDE for revenue cycle diagnosis and root-cause intelligence",
-        "ClaimAIDE for AR prioritization, denial prevention, and recovery workflows",
-        "CoverAIDE for eligibility verification and prior-authorization gating",
-        "ClinicAIDE for clinical documentation and coding integrity",
-        "ConversAIDE for patient, payer, scheduling, intake, and follow-up conversations",
-        "NurturAIDE for patient outreach, care-gap closure, and engagement",
-        "Compass for readiness assessment, deployment planning, POD prioritization, and ROI measurement",
-        "Economic arbitration for prioritizing actions by expected operational and financial value",
-        "Policy- and evidence-led decision governance",
-        "Human oversight for exceptions, approvals, and critical actions",
-        "Integration with existing EHR, billing, RCM, and point-AI systems"
-      ],
-      "isRelatedTo": [
         {
-          "@type": "SoftwareApplication",
-          "name": "DiagnosAIDE",
-          "applicationCategory": "Healthcare Revenue Cycle Intelligence",
-          "description": "The Curaide diagnosis layer for identifying workflow gaps, revenue leakage, root causes, decision delays, and operational priorities."
-        },
-        {
-          "@type": "SoftwareApplication",
-          "name": "Curaide PODs",
-          "applicationCategory": "Healthcare Revenue Cycle Automation",
-          "description": "Five modular operational treatment components: ClaimAIDE, CoverAIDE, ClinicAIDE, ConversAIDE, and NurturAIDE."
-        },
-        {
-          "@type": "SoftwareApplication",
-          "name": "Compass",
-          "applicationCategory": "Healthcare AI Readiness and ROI Measurement",
-          "description": "The Curaide measurement layer for establishing baselines, defining deployment scope, prioritizing POD activation, and measuring ongoing improvement."
+            "@context": "https://schema.org",
+            "@graph": [{
+                    "@type": "Organization",
+                    "@id": "https://Curaide.ai/#organization",
+                    "name": "Flatworld Solutions Inc.",
+                    "url": "https://www.flatworldsolutions.com/",
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Curaide"
+                    }
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://Curaide.ai/#website",
+                    "url": "https://Curaide.ai/",
+                    "name": "Curaide",
+                    "description": "Curaide is a healthcare revenue cycle management decision control plane that governs operational decisions across existing healthcare systems, AI agents, and human teams.",
+                    "publisher": {
+                        "@id": "https://Curaide.ai/#organization"
+                    },
+                    "inLanguage": "en-US"
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://Curaide.ai/#webpage",
+                    "url": "https://Curaide.ai/",
+                    "name": "Curaide - Decision Control Plane for Healthcare Operations",
+                    "description": "Curaide combines DiagnosAIDE, modular Curaide PODs, and Compass to diagnose revenue cycle gaps, coordinate operational treatment, and measure improvement across existing healthcare systems.",
+                    "isPartOf": {
+                        "@id": "https://Curaide.ai/#website"
+                    },
+                    "about": {
+                        "@id": "https://Curaide.ai/#software"
+                    },
+                    "publisher": {
+                        "@id": "https://Curaide.ai/#organization"
+                    },
+                    "inLanguage": "en-US"
+                },
+                {
+                    "@type": "SoftwareApplication",
+                    "@id": "https://Curaide.ai/#software",
+                    "name": "Curaide",
+                    "alternateName": "Curaide Healthcare RCM Decision Control Plane",
+                    "url": "https://Curaide.ai/",
+                    "mainEntityOfPage": {
+                        "@id": "https://Curaide.ai/#webpage"
+                    },
+                    "applicationCategory": "BusinessApplication",
+                    "applicationSubCategory": "Healthcare Revenue Cycle Management",
+                    "operatingSystem": "Web-based",
+                    "description": "Curaide is a software-based decision control plane for healthcare revenue cycle operations. It operates above existing EHR, billing, RCM, AI, and workflow systems to determine what should happen next, what should be prioritized, and whether an action should be executed by an AI agent or reviewed by a human.",
+                    "provider": {
+                        "@id": "https://Curaide.ai/#organization"
+                    },
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Curaide"
+                    },
+                    "audience": {
+                        "@type": "BusinessAudience",
+                        "audienceType": "Healthcare organizations, hospitals, health systems, physician groups, specialty practices, revenue cycle leaders, healthcare CFOs, and private-equity-backed provider groups"
+                    },
+                    "featureList": [
+                        "DiagnosAIDE for revenue cycle diagnosis and root-cause intelligence",
+                        "ClaimAIDE for AR prioritization, denial prevention, and recovery workflows",
+                        "CoverAIDE for eligibility verification and prior-authorization gating",
+                        "ClinicAIDE for clinical documentation and coding integrity",
+                        "ConversAIDE for patient, payer, scheduling, intake, and follow-up conversations",
+                        "NurturAIDE for patient outreach, care-gap closure, and engagement",
+                        "Compass for readiness assessment, deployment planning, POD prioritization, and ROI measurement",
+                        "Economic arbitration for prioritizing actions by expected operational and financial value",
+                        "Policy- and evidence-led decision governance",
+                        "Human oversight for exceptions, approvals, and critical actions",
+                        "Integration with existing EHR, billing, RCM, and point-AI systems"
+                    ],
+                    "isRelatedTo": [{
+                            "@type": "SoftwareApplication",
+                            "name": "DiagnosAIDE",
+                            "applicationCategory": "Healthcare Revenue Cycle Intelligence",
+                            "description": "The Curaide diagnosis layer for identifying workflow gaps, revenue leakage, root causes, decision delays, and operational priorities."
+                        },
+                        {
+                            "@type": "SoftwareApplication",
+                            "name": "Curaide PODs",
+                            "applicationCategory": "Healthcare Revenue Cycle Automation",
+                            "description": "Five modular operational treatment components: ClaimAIDE, CoverAIDE, ClinicAIDE, ConversAIDE, and NurturAIDE."
+                        },
+                        {
+                            "@type": "SoftwareApplication",
+                            "name": "Compass",
+                            "applicationCategory": "Healthcare AI Readiness and ROI Measurement",
+                            "description": "The Curaide measurement layer for establishing baselines, defining deployment scope, prioritizing POD activation, and measuring ongoing improvement."
+                        }
+                    ]
+                },
+                {
+                    "@type": "FAQPage",
+                    "@id": "https://Curaide.ai/#faq",
+                    "url": "https://Curaide.ai/#faq",
+                    "name": "Curaide Frequently Asked Questions",
+                    "isPartOf": {
+                        "@id": "https://Curaide.ai/#webpage"
+                    },
+                    "about": {
+                        "@id": "https://Curaide.ai/#software"
+                    },
+                    "mainEntity": [{
+                            "@type": "Question",
+                            "name": "Does Curaide replace our EHR, billing platform, or existing RCM systems?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "No. Curaide operates above the existing healthcare technology stack as a decision control plane. It governs workflow decisions, prioritizes operational effort, and coordinates execution while EHR, billing, and RCM systems continue performing their intended functions."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "How is Curaide different from traditional RCM automation?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Traditional RCM automation focuses on predefined tasks or isolated workflows. Curaide connects diagnosis, operational treatment, and measurement to determine which workflows require attention, which actions should be executed, and how decisions and outcomes should be governed across existing systems."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Can we start with a single Curaide POD?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Yes. Organizations can begin with one Curaide POD aligned to a specific operational priority, or deploy DiagnosAIDE, Compass, or the complete Curaide framework. Adoption can expand progressively without replacing existing revenue cycle systems."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "How does Curaide keep AI-driven decisions governed and auditable?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Curaide applies policy- and evidence-led decision governance, records AI-assisted decisions and outcomes, and keeps human reviewers responsible for exceptions, approvals, and critical actions. This supports operational traceability, accountability, and audit readiness."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "How long does a typical Curaide implementation take?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Timelines depend on scope and integration requirements. Curaide materials indicate that a Compass assessment can be delivered in approximately two days, DiagnosAIDE can begin delivering intelligence within about 30 days, and individual Curaide POD deployments typically take 30 to 60 days."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What is the best way to evaluate Curaide for our organization?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "A structured Curaide walkthrough followed by a Compass assessment is the recommended starting point. This establishes the operational baseline, identifies workflow and decision gaps, evaluates readiness, prioritizes POD activation, and defines a deployment roadmap aligned with the existing healthcare technology environment."
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://Curaide.ai/#faq",
-      "url": "https://Curaide.ai/#faq",
-      "name": "Curaide Frequently Asked Questions",
-      "isPartOf": {
-        "@id": "https://Curaide.ai/#webpage"
-      },
-      "about": {
-        "@id": "https://Curaide.ai/#software"
-      },
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Does Curaide replace our EHR, billing platform, or existing RCM systems?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Curaide operates above the existing healthcare technology stack as a decision control plane. It governs workflow decisions, prioritizes operational effort, and coordinates execution while EHR, billing, and RCM systems continue performing their intended functions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How is Curaide different from traditional RCM automation?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Traditional RCM automation focuses on predefined tasks or isolated workflows. Curaide connects diagnosis, operational treatment, and measurement to determine which workflows require attention, which actions should be executed, and how decisions and outcomes should be governed across existing systems."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can we start with a single Curaide POD?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Organizations can begin with one Curaide POD aligned to a specific operational priority, or deploy DiagnosAIDE, Compass, or the complete Curaide framework. Adoption can expand progressively without replacing existing revenue cycle systems."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does Curaide keep AI-driven decisions governed and auditable?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Curaide applies policy- and evidence-led decision governance, records AI-assisted decisions and outcomes, and keeps human reviewers responsible for exceptions, approvals, and critical actions. This supports operational traceability, accountability, and audit readiness."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does a typical Curaide implementation take?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Timelines depend on scope and integration requirements. Curaide materials indicate that a Compass assessment can be delivered in approximately two days, DiagnosAIDE can begin delivering intelligence within about 30 days, and individual Curaide POD deployments typically take 30 to 60 days."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the best way to evaluate Curaide for our organization?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A structured Curaide walkthrough followed by a Compass assessment is the recommended starting point. This establishes the operational baseline, identifies workflow and decision gaps, evaluates readiness, prioritizes POD activation, and defines a deployment roadmap aligned with the existing healthcare technology environment."
-          }
-        }
-      ]
-    }
-  ]
-}
-</script>
+    </script>
 </body>
 </html>

@@ -120,11 +120,12 @@ class FormHandler
     }
     private function preparePayload()
     {
+        $smsOptIn = ($this->postData['sms-opt-in'] ?? '') === 'true';
         $this->payload = [
             'FirstName' => $this->postData['FirstName'] ?? '',
             'Email' => strtolower(trim($this->postData['Email'] ?? '')),
             'phone' => $this->postData['phone'] ?: '0000000000',
-            'description' => $this->postData['description'] ?? '',
+            'description' => ($this->postData['description'] ?? '') . "\n\nSMS Opt-in: " . ($smsOptIn ? 'true' : 'false'),
             'Company' => $this->postData['Company'] ?? '',
             'ip' => getUserIpAddress() ?? '',
             'country' => $this->getCountryCode(),
@@ -149,7 +150,8 @@ class FormHandler
             'search_engine' => '-',
             'useragent' => $this->serverData['HTTP_USER_AGENT'] ?? '',
             'keywords' => '',
-            'captcha_status' => $this->captcha_status
+            'captcha_status' => $this->captcha_status,
+            'sms-opt-in' => $smsOptIn
         ];
         return $this;
     }
