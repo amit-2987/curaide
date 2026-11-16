@@ -67,7 +67,7 @@
                     <!-- Section 1 -->
                     <div class="faq-card" id="s1">
                         <div class="d-flex align-items-center gap-2 mb-3">
-                            <img src="images/2050-254.png" alt="" style="width:20px;height:7px; background: linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius: 20px;">
+                            <span style="display:inline-block;width:20px;height:7px;background:linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius:20px;"></span>
                             <h2 class="section-title mb-0">Is Curaide Right for Your RCM?</h2>
                         </div>
                         <div class="faq-item">
@@ -115,7 +115,7 @@
                     <!-- Section 2 -->
                     <div class="faq-card" id="s2">
                         <div class="d-flex align-items-center gap-2 mb-3">
-                            <img src="images/2050-256.png" alt="" style="width:20px;height:7px; background: linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius: 20px;">
+                            <span style="display:inline-block;width:20px;height:7px;background:linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius:20px;"></span>
                             <h2 class="section-title mb-0">How Does Curaide Govern RCM Decisions?</h2>
                         </div>
                         <div class="faq-item">
@@ -180,7 +180,7 @@
                     <!-- Section 3 -->
                     <div class="faq-card" id="s3">
                         <div class="d-flex align-items-center gap-2 mb-3">
-                        <img src="images/2050-256.png" alt="" style="width:20px;height:7px; background: linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius: 20px;">
+                        <span style="display:inline-block;width:20px;height:7px;background:linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius:20px;"></span>
                         <h2 class="section-title mb-0">Find RCM Gaps with DiagnosAIDE</h2>
                         </div>
                         <div class="faq-item">
@@ -208,7 +208,7 @@
                     <!-- Section 4 -->
                     <div class="faq-card" id="s4">
                         <div class="d-flex align-items-center gap-2 mb-3">
-                        <img src="images/2050-256.png" alt="" style="width:20px;height:7px; background: linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius: 20px;">
+                        <span style="display:inline-block;width:20px;height:7px;background:linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius:20px;"></span>
                         <h2 class="section-title mb-0">Execute RCM Workflows with Curaide PODs</h2>
                         </div>
                         <div class="faq-item">
@@ -240,7 +240,7 @@
                     <!-- Section 5 -->
                     <div class="faq-card" id="s5">
                         <div class="d-flex align-items-center gap-2 mb-3">
-                        <img src="images/2050-256.png" alt="" style="width:20px;height:7px; background: linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius: 20px;">
+                        <span style="display:inline-block;width:20px;height:7px;background:linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius:20px;"></span>
                         <h2 class="section-title mb-0">Measure AI Readiness and ROI with Compass</h2>
                         </div>
                         <div class="faq-item">
@@ -272,7 +272,7 @@
                     <!-- Section 6 -->
                     <div class="faq-card" id="s6">
                         <div class="d-flex align-items-center gap-2 mb-3">
-                        <img src="images/2050-256.png" alt="" style="width:20px;height:7px; background: linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius: 20px;">
+                        <span style="display:inline-block;width:20px;height:7px;background:linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius:20px;"></span>
                         <h2 class="section-title mb-0">How to Improve RCM Performance</h2>
                         </div>
                         <div class="faq-item">
@@ -300,7 +300,7 @@
                     <!-- Section 7 -->
                     <div class="faq-card" id="s7">
                         <div class="d-flex align-items-center gap-2 mb-3">
-                        <img src="images/2050-256.png" alt="" style="width:20px;height:7px; background: linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius: 20px;">
+                        <span style="display:inline-block;width:20px;height:7px;background:linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius:20px;"></span>
                         <h2 class="section-title mb-0">Will Curaide Work with Your Existing Systems?</h2>
                         </div>
                         <div class="faq-item">
@@ -324,7 +324,7 @@
                     <!-- Section 8 -->
                     <div class="faq-card" id="s8">
                         <div class="d-flex align-items-center gap-2 mb-3">
-                        <img src="images/2050-256.png" alt="" style="width:20px;height:7px; background: linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius: 20px;">
+                        <span style="display:inline-block;width:20px;height:7px;background:linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius:20px;"></span>
                         <h2 class="section-title mb-0">How Does Curaide Govern AI and PHI?</h2>
                         </div>
                         <div class="faq-item">
@@ -352,7 +352,7 @@
                     <!-- Section 9 -->
                     <div class="faq-card" id="s9">
                         <div class="d-flex align-items-center gap-2 mb-3">
-                        <img src="images/2050-256.png" alt="" style="width:20px;height:7px; background: linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius: 20px;">
+                        <span style="display:inline-block;width:20px;height:7px;background:linear-gradient(181.61deg, #088AFF -6.75%, #096CD8 98.63%);border-radius:20px;"></span>
                         <h2 class="section-title mb-0">How Do You Get Started with Curaide?</h2>
                         </div>
                         <div class="faq-item">

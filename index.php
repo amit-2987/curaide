@@ -1697,18 +1697,21 @@
                             "@type": "SoftwareApplication",
                             "name": "DiagnosAIDE",
                             "applicationCategory": "Healthcare Revenue Cycle Intelligence",
+                            "operatingSystem": "Web-based",
                             "description": "The Curaide diagnosis layer for identifying workflow gaps, revenue leakage, root causes, decision delays, and operational priorities."
                         },
                         {
                             "@type": "SoftwareApplication",
                             "name": "Curaide PODs",
                             "applicationCategory": "Healthcare Revenue Cycle Automation",
+                            "operatingSystem": "Web-based",
                             "description": "Five modular operational treatment components: ClaimAIDE, CoverAIDE, ClinicAIDE, ConversAIDE, and NurturAIDE."
                         },
                         {
                             "@type": "SoftwareApplication",
                             "name": "Compass",
                             "applicationCategory": "Healthcare AI Readiness and ROI Measurement",
+                            "operatingSystem": "Web-based",
                             "description": "The Curaide measurement layer for establishing baselines, defining deployment scope, prioritizing POD activation, and measuring ongoing improvement."
                         }
                     ]
